@@ -1,0 +1,34 @@
+/* Wanderlust – optimised stylesheet (single file, no @import, minified at build) */
+:root { --brand: #0b3d91; --accent: #f6a700; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial, sans-serif; color: #1a1a1a; line-height: 1.5; }
+a:hover { color: var(--accent); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.site-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 32px; background: var(--brand); }
+.site-header a { color: #fff; text-decoration: none; margin-left: 16px; }
+.logo { font-size: 24px; font-weight: bold; margin-left: 0 !important; }
+
+/* Hero is a real <img> so the browser can discover and prioritise it (LCP) */
+.hero { position: relative; height: 60vh; min-height: 320px; overflow: hidden; display: flex; align-items: center; justify-content: center; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.6); text-align: center; background: #2a4d8f; }
+.hero picture, .hero img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; will-change: transform; }
+.hero-text { position: relative; }
+.hero h1 { font-size: 48px; margin: 0 0 8px; }
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px; }
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.card { border: 1px solid #ddd; border-radius: 8px; overflow: hidden; background: #fff; content-visibility: auto; contain-intrinsic-size: 380px; }
+.card img { width: 100%; height: auto; display: block; }
+.card h3, .card p { margin: 10px 14px; }
+.btn { display: inline-block; margin: 0 14px 14px; padding: 8px 14px; background: var(--brand); color: #fff; border: 0; border-radius: 6px; text-decoration: none; font: inherit; cursor: pointer; }
+.btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+/* Reviews: content-visibility skips rendering off-screen items */
+.review { display: flex; gap: 12px; padding: 12px 0; border-bottom: 1px solid #eee; content-visibility: auto; contain-intrinsic-size: 64px; }
+.avatar { flex: 0 0 40px; height: 40px; border-radius: 50%; background: var(--brand); color: #fff; display: grid; place-items: center; font-weight: bold; }
+.review p { margin: 4px 0 0; }
+.site-footer { background: #111; color: #fff; text-align: center; padding: 24px; }
+
+@media (max-width: 900px) { .cards { grid-template-columns: repeat(2, 1fr); } .hero h1 { font-size: 32px; } }
+@media (max-width: 560px) { .cards { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .hero img { transform: none !important; } }

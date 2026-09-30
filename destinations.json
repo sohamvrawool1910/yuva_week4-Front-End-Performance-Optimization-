@@ -1,0 +1,10 @@
+[
+ {"id":"dest1","title":"Kyoto, Japan","text":"Temples, tea houses and lantern-lit streets in every season.","alt":"Stylised golden sunset over layered mountain ridges"},
+ {"id":"dest2","title":"Patagonia, Chile","text":"Granite towers, glacier lakes and endless wind-swept plains.","alt":"Soft blue sky above dark layered mountain silhouettes"},
+ {"id":"dest3","title":"Santorini, Greece","text":"Whitewashed villages perched above a deep blue caldera.","alt":"Pink dusk sky with rust-coloured hills in the foreground"},
+ {"id":"dest4","title":"Banff, Canada","text":"Turquoise lakes framed by the Canadian Rockies.","alt":"Green-teal sky over forested mountain layers"},
+ {"id":"dest5","title":"Marrakech, Morocco","text":"Souks, spice markets and riad courtyards to get lost in.","alt":"Lavender sky and purple mountain ridges"},
+ {"id":"dest6","title":"Reykjavik, Iceland","text":"Geothermal pools, northern lights and black-sand beaches.","alt":"Pale grey-blue sky with steel-blue mountain shapes"},
+ {"id":"dest7","title":"Bali, Indonesia","text":"Rice terraces, surf breaks and quiet temple mornings.","alt":"Peach sunrise over dark brown hills"},
+ {"id":"dest8","title":"Cusco, Peru","text":"Gateway to Machu Picchu and the Sacred Valley.","alt":"Lime-green sky above deep green mountain layers"}
+]

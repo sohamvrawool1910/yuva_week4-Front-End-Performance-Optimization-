@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wanderlust – Travel Destinations</title>
+  <meta name="description" content="Hand-picked travel destinations and honest reviews.">
+  <!--HERO_PRELOAD-->
+  <link rel="stylesheet" href="css/%CSS%">
+  <script src="js/%MAIN%" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="logo" href="#">Wanderlust</a>
+    <nav aria-label="Main"><a href="#destinations">Destinations</a> <a href="#reviews">Reviews</a></nav></header>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <!--HERO_IMG-->
+    <div class="hero-text"><h1 id="hero-title">Find your next journey</h1><p>Hand-picked places, honest reviews.</p></div>
+  </section>
+
+  <main>
+    <section id="destinations" class="wrap" aria-labelledby="dest-title"><h2 id="dest-title">Popular destinations</h2>
+    <div class="cards">
+<!--CARDS-->
+    </div></section>
+
+    <section id="reviews" class="wrap" aria-labelledby="rev-title"><h2 id="rev-title">Traveller reviews</h2>
+      <!-- Reviews module is code-split: loaded only when this section nears the viewport -->
+      <div id="review-list"></div>
+      <p id="review-status" class="sr-only" role="status" aria-live="polite"></p>
+      <button id="more-reviews" class="btn" type="button" hidden>Show more reviews</button>
+      <noscript><p>Enable JavaScript to read traveller reviews.</p></noscript>
+    </section>
+  </main>
+  <footer class="site-footer"><p>&copy; 2026 Wanderlust</p></footer>
+</body>
+</html>
